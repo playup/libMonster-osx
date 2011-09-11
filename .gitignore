@@ -9,5 +9,5 @@
 
 *.xcodeproj/xcuserdata/
 *.xcodeproj/project.xcworkspace/
-libMonster.xcodeproj/project.xcworkspace/
-libMonster.xcodeproj/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+**/*.xcodeproj/project.xcworkspace/
