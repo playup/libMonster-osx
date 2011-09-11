@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3440C5B14186C7900F236EB /* MonsterIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = B3440C5914186C7900F236EB /* MonsterIdentifier.h */; };
+		B3440C5C14186C7900F236EB /* MonsterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B3440C5A14186C7900F236EB /* MonsterIdentifier.m */; };
+		B3B9154B1405EDFF002C84B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B9154A1405EDFF002C84B3 /* Foundation.framework */; };
+		B3B915511405EDFF002C84B3 /* MetricMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B915501405EDFF002C84B3 /* MetricMonster.m */; };
+		B3B9155D1405F58A002C84B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B9155C1405F58A002C84B3 /* UIKit.framework */; };
+		B3C283E914060F6F00E84705 /* MonsterRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C283E714060F6F00E84705 /* MonsterRequest.h */; };
+		B3C283EA14060F6F00E84705 /* MonsterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C283E814060F6F00E84705 /* MonsterRequest.m */; };
+		B3C283EE14061BD300E84705 /* MonsterJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C283EC14061BD300E84705 /* MonsterJSON.h */; };
+		B3C283EF14061BD300E84705 /* MonsterJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C283ED14061BD300E84705 /* MonsterJSON.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3440C5914186C7900F236EB /* MonsterIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterIdentifier.h; sourceTree = "<group>"; };
+		B3440C5A14186C7900F236EB /* MonsterIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterIdentifier.m; sourceTree = "<group>"; };
+		B3B915471405EDFF002C84B3 /* liblibMonster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibMonster.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B9154A1405EDFF002C84B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3B9154E1405EDFF002C84B3 /* libMonster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libMonster-Prefix.pch"; sourceTree = "<group>"; };
+		B3B9154F1405EDFF002C84B3 /* MetricMonster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetricMonster.h; sourceTree = "<group>"; };
+		B3B915501405EDFF002C84B3 /* MetricMonster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetricMonster.m; sourceTree = "<group>"; };
+		B3B9155C1405F58A002C84B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3C283E714060F6F00E84705 /* MonsterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterRequest.h; sourceTree = "<group>"; };
+		B3C283E814060F6F00E84705 /* MonsterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterRequest.m; sourceTree = "<group>"; };
+		B3C283EC14061BD300E84705 /* MonsterJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterJSON.h; sourceTree = "<group>"; };
+		B3C283ED14061BD300E84705 /* MonsterJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterJSON.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3B915441405EDFF002C84B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B9155D1405F58A002C84B3 /* UIKit.framework in Frameworks */,
+				B3B9154B1405EDFF002C84B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3B9153C1405EDFE002C84B3 = {
+			isa = PBXGroup;
+			children = (
+				B3B9155C1405F58A002C84B3 /* UIKit.framework */,
+				B3B9154C1405EDFF002C84B3 /* libMonster */,
+				B3B915491405EDFF002C84B3 /* Frameworks */,
+				B3B915481405EDFF002C84B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3B915481405EDFF002C84B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3B915471405EDFF002C84B3 /* liblibMonster.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3B915491405EDFF002C84B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B9154A1405EDFF002C84B3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3B9154C1405EDFF002C84B3 /* libMonster */ = {
+			isa = PBXGroup;
+			children = (
+				B3B9154F1405EDFF002C84B3 /* MetricMonster.h */,
+				B3B915501405EDFF002C84B3 /* MetricMonster.m */,
+				B3C283E714060F6F00E84705 /* MonsterRequest.h */,
+				B3C283E814060F6F00E84705 /* MonsterRequest.m */,
+				B3B9154D1405EDFF002C84B3 /* Supporting Files */,
+				B3C283EC14061BD300E84705 /* MonsterJSON.h */,
+				B3C283ED14061BD300E84705 /* MonsterJSON.m */,
+				B3440C5914186C7900F236EB /* MonsterIdentifier.h */,
+				B3440C5A14186C7900F236EB /* MonsterIdentifier.m */,
+			);
+			path = libMonster;
+			sourceTree = "<group>";
+		};
+		B3B9154D1405EDFF002C84B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3B9154E1405EDFF002C84B3 /* libMonster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3B915451405EDFF002C84B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C283E914060F6F00E84705 /* MonsterRequest.h in Headers */,
+				B3C283EE14061BD300E84705 /* MonsterJSON.h in Headers */,
+				B3440C5B14186C7900F236EB /* MonsterIdentifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B3B915461405EDFF002C84B3 /* libMonster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B915541405EDFF002C84B3 /* Build configuration list for PBXNativeTarget "libMonster" */;
+			buildPhases = (
+				B3B915431405EDFF002C84B3 /* Sources */,
+				B3B915441405EDFF002C84B3 /* Frameworks */,
+				B3B915451405EDFF002C84B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libMonster;
+			productName = libMonster;
+			productReference = B3B915471405EDFF002C84B3 /* liblibMonster.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3B9153E1405EDFE002C84B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Digital Five";
+			};
+			buildConfigurationList = B3B915411405EDFE002C84B3 /* Build configuration list for PBXProject "libMonster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3B9153C1405EDFE002C84B3;
+			productRefGroup = B3B915481405EDFF002C84B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3B915461405EDFF002C84B3 /* libMonster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3B915431405EDFF002C84B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B915511405EDFF002C84B3 /* MetricMonster.m in Sources */,
+				B3C283EA14060F6F00E84705 /* MonsterRequest.m in Sources */,
+				B3C283EF14061BD300E84705 /* MonsterJSON.m in Sources */,
+				B3440C5C14186C7900F236EB /* MonsterIdentifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B3B915521405EDFF002C84B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3B915531405EDFF002C84B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3B915551405EDFF002C84B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libMonster.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libMonster/libMonster-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B3B915561405EDFF002C84B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libMonster.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libMonster/libMonster-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3B915411405EDFE002C84B3 /* Build configuration list for PBXProject "libMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B915521405EDFF002C84B3 /* Debug */,
+				B3B915531405EDFF002C84B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B915541405EDFF002C84B3 /* Build configuration list for PBXNativeTarget "libMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B915551405EDFF002C84B3 /* Debug */,
+				B3B915561405EDFF002C84B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3B9153E1405EDFE002C84B3 /* Project object */;
+}

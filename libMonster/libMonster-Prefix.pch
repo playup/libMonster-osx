@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'libMonster' target in the 'libMonster' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

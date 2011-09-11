@@ -1,0 +1,13 @@
+
+# OSX Files
+.DS_Store
+**/.DS_Store
+*.swp
+*.pidb
+*.userprefs
+*.swo
+
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+libMonster.xcodeproj/project.xcworkspace/
+libMonster.xcodeproj/xcuserdata/
