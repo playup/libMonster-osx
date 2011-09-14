@@ -33,7 +33,7 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    [MetricMonster engageWithCatalog:@"MobileTests" andProjectKey:@"ytZbzRDXAEiC3GhN462cUc0IXuPKZ2qoNOnGXzcoadM1"];
+    [MetricMonster engageWithCatalog:@"greedy" andProjectKey:@"2A1PF8SSo0mjCWCFbNWPgA2"];
     
     return YES;
 }
