@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
 
 @implementation AppDelegate
@@ -33,7 +32,13 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    [MetricMonster engageWithCatalog:@"greedy" andProjectKey:@"2A1PF8SSo0mjCWCFbNWPgA2"];
+#ifndef MM_CATALOG
+#error CopyAndPasteError: MetricMonster catalog name was defined in the build config, please replace with your own
+#endif
+#ifndef MM_PROJECTKEY
+#error CopyAndPasteError: MetricMonster project name was defined in the build config, please replace with your own
+#endif
+    [MetricMonster engageWithCatalog:MM_CATALOG andProjectKey:MM_PROJECTKEY];
     
     return YES;
 }
