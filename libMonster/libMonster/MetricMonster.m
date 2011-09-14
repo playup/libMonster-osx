@@ -219,6 +219,7 @@
 #endif
     _timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:50 target:self selector:@selector(sendEvent:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    [_timer fire];
 }
 
 #pragma mark -
