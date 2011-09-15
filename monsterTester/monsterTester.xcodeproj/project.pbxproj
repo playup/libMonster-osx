@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3440C64141872BC00F236EB /* MonsterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B3440C63141872BC00F236EB /* MonsterIdentifier.m */; };
+		B3C1834814207BE70099D5D5 /* bg-pattern-title.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C1834614207BE70099D5D5 /* bg-pattern-title.png */; };
+		B3C1834914207BE70099D5D5 /* logo-string.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C1834714207BE70099D5D5 /* logo-string.png */; };
 		B3D23C91140C7D8800E724C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D23C90140C7D8800E724C5 /* UIKit.framework */; };
 		B3D23C93140C7D8800E724C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D23C92140C7D8800E724C5 /* Foundation.framework */; };
 		B3D23C99140C7D8800E724C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D23C97140C7D8800E724C5 /* InfoPlist.strings */; };
@@ -19,11 +21,20 @@
 		B3D23CBC140C7DFF00E724C5 /* MetricMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D23CB7140C7DFF00E724C5 /* MetricMonster.m */; };
 		B3D23CBD140C7DFF00E724C5 /* MonsterJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D23CB9140C7DFF00E724C5 /* MonsterJSON.m */; };
 		B3D23CBE140C7DFF00E724C5 /* MonsterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D23CBB140C7DFF00E724C5 /* MonsterRequest.m */; };
+		B3E3E0F01421A17500C01E84 /* mmbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0EF1421A17500C01E84 /* mmbg.png */; };
+		B3E3E0F91421A31F00C01E84 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0F81421A31F00C01E84 /* Icon.png */; };
+		B3E3E0FB1421A32700C01E84 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0FA1421A32700C01E84 /* Icon@2x.png */; };
+		B3E3E0FD1421A3A900C01E84 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0FC1421A3A900C01E84 /* Icon-72.png */; };
+		B3E3E1011421A5FC00C01E84 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0FE1421A5FC00C01E84 /* Default-Landscape~ipad.png */; };
+		B3E3E1021421A5FC00C01E84 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E0FF1421A5FC00C01E84 /* Default.png */; };
+		B3E3E1031421A5FC00C01E84 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E3E1001421A5FC00C01E84 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3440C62141872BC00F236EB /* MonsterIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterIdentifier.h; sourceTree = "<group>"; };
 		B3440C63141872BC00F236EB /* MonsterIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterIdentifier.m; sourceTree = "<group>"; };
+		B3C1834614207BE70099D5D5 /* bg-pattern-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-pattern-title.png"; sourceTree = "<group>"; };
+		B3C1834714207BE70099D5D5 /* logo-string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-string.png"; sourceTree = "<group>"; };
 		B3D23C8C140C7D8800E724C5 /* monsterTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monsterTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D23C90140C7D8800E724C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3D23C92140C7D8800E724C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +54,13 @@
 		B3D23CB9140C7DFF00E724C5 /* MonsterJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterJSON.m; sourceTree = "<group>"; };
 		B3D23CBA140C7DFF00E724C5 /* MonsterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterRequest.h; sourceTree = "<group>"; };
 		B3D23CBB140C7DFF00E724C5 /* MonsterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonsterRequest.m; sourceTree = "<group>"; };
+		B3E3E0EF1421A17500C01E84 /* mmbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmbg.png; sourceTree = "<group>"; };
+		B3E3E0F81421A31F00C01E84 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B3E3E0FA1421A32700C01E84 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B3E3E0FC1421A3A900C01E84 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		B3E3E0FE1421A5FC00C01E84 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "monsterTester/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		B3E3E0FF1421A5FC00C01E84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = monsterTester/Default.png; sourceTree = "<group>"; };
+		B3E3E1001421A5FC00C01E84 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "monsterTester/Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +76,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3C1834514207BE70099D5D5 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3E3E0EF1421A17500C01E84 /* mmbg.png */,
+				B3C1834614207BE70099D5D5 /* bg-pattern-title.png */,
+				B3C1834714207BE70099D5D5 /* logo-string.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		B3D23C81140C7D8800E724C5 = {
 			isa = PBXGroup;
 			children = (
+				B3E3E0FE1421A5FC00C01E84 /* Default-Landscape~ipad.png */,
+				B3E3E0FF1421A5FC00C01E84 /* Default.png */,
+				B3E3E1001421A5FC00C01E84 /* Default@2x.png */,
+				B3E3E0FC1421A3A900C01E84 /* Icon-72.png */,
+				B3E3E0FA1421A32700C01E84 /* Icon@2x.png */,
+				B3E3E0F81421A31F00C01E84 /* Icon.png */,
 				B3D23CB4140C7DFF00E724C5 /* libMonster */,
 				B3D23C94140C7D8800E724C5 /* monsterTester */,
 				B3D23C8F140C7D8800E724C5 /* Frameworks */,
@@ -88,6 +122,7 @@
 		B3D23C94140C7D8800E724C5 /* monsterTester */ = {
 			isa = PBXGroup;
 			children = (
+				B3C1834514207BE70099D5D5 /* assets */,
 				B3D23C9D140C7D8800E724C5 /* AppDelegate.h */,
 				B3D23C9E140C7D8800E724C5 /* AppDelegate.m */,
 				B3D23CA0140C7D8800E724C5 /* ViewController.h */,
@@ -180,6 +215,15 @@
 				B3D23C99140C7D8800E724C5 /* InfoPlist.strings in Resources */,
 				B3D23CA5140C7D8800E724C5 /* ViewController_iPhone.xib in Resources */,
 				B3D23CA8140C7D8800E724C5 /* ViewController_iPad.xib in Resources */,
+				B3C1834814207BE70099D5D5 /* bg-pattern-title.png in Resources */,
+				B3C1834914207BE70099D5D5 /* logo-string.png in Resources */,
+				B3E3E0F01421A17500C01E84 /* mmbg.png in Resources */,
+				B3E3E0F91421A31F00C01E84 /* Icon.png in Resources */,
+				B3E3E0FB1421A32700C01E84 /* Icon@2x.png in Resources */,
+				B3E3E0FD1421A3A900C01E84 /* Icon-72.png in Resources */,
+				B3E3E1011421A5FC00C01E84 /* Default-Landscape~ipad.png in Resources */,
+				B3E3E1021421A5FC00C01E84 /* Default.png in Resources */,
+				B3E3E1031421A5FC00C01E84 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

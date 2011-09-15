@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic,retain) NSArray *buttonItems;
+@property (nonatomic, assign) BOOL iPad;
+@property (nonatomic, assign) IBOutlet UILabel *debugLabel;
+@property (nonatomic, assign) IBOutlet UIScrollView *scrollView;
+
+-(IBAction) sceneChanged:(id)sender;
+-(IBAction) inAppPurchase:(id)sender;
 
 @end

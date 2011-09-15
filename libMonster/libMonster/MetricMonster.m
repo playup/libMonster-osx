@@ -95,7 +95,7 @@
 
 - (void) addHeartBeatEvent
 {
-    double sessionDuration = [NSDate timeIntervalSinceReferenceDate] - _sessionStart;
+    double sessionDuration = ceil([NSDate timeIntervalSinceReferenceDate] - _sessionStart);
     
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSMutableDictionary *eventData = [NSMutableDictionary dictionaryWithObjectsAndKeys:
@@ -158,7 +158,7 @@
     if(dict == nil){
         dict = [NSMutableDictionary dictionary];
     }
-    double sessionDuration = [NSDate timeIntervalSinceReferenceDate] - _sessionStart;
+    double sessionDuration = ceil([NSDate timeIntervalSinceReferenceDate] - _sessionStart);
     [dict setObject:[NSNumber numberWithDouble:(_appDuration + sessionDuration)] forKey:kMetricMonsterDictKeyApplicationDuration];
     
     [dict writeToFile:[self monsterFilePath] atomically:YES];
@@ -219,7 +219,6 @@
 #endif
     _timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:50 target:self selector:@selector(sendEvent:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
-    [_timer fire];
 }
 
 #pragma mark -

@@ -10,84 +10,64 @@
 
 @implementation ViewController
 
-@synthesize buttonItems;
+@synthesize iPad, debugLabel, scrollView;
 
-- (void)didReceiveMemoryWarning
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self){
+        iPad = NO;
+    }
+    return self;
 }
 
 #pragma mark - View lifecycle
 
--(void) buttonPressed:(id)sender
+-(void) sceneChanged:(id)sender
 {
-    NSString *scene = [self.buttonItems objectAtIndex:[sender tag]];
+    NSArray *scenes = [NSArray arrayWithObjects:@"Level One", @"Level Two", @"Level Three", nil];
+    NSString *scene = [scenes objectAtIndex:[(UISegmentedControl*)sender selectedSegmentIndex]];
     [MetricMonster addHeartBeatValue:scene forKey:kMetricMonsterMessageKeyCurrentScene];
 }
 
-- (void)loadView
+-(IBAction) inAppPurchase:(id)sender
 {
-    [super loadView];
+    [MetricMonster addEventData:[NSNumber numberWithFloat:0.99] forKey:kMetricMonsterMessageKeyInAppPurchase];
+}
 
-    self.buttonItems = [NSArray arrayWithObjects:@"Home Menu", @"Level Select", @"Level 2", @"Level 10", @"Highscores", nil];
-    
-    int buttonHeight = 30;
-    int buttonWidth = 150;
-    int x = 5;
-    int y = 5;
-    
-    for (int i=0; i < [self.buttonItems count]; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTag:i];
-        [button setFrame:CGRectMake(x, y, buttonWidth, buttonHeight)];
-        [button setTitle:[self.buttonItems objectAtIndex:i] forState:UIControlStateNormal];
-        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-        y += (buttonHeight + 5);
+- (void) mmRequestDebug:(NSNotification*) notification
+{
+    NSString *debug = [notification object];
+
+    CGSize debugSize = [debug sizeWithFont:[debugLabel font] constrainedToSize:CGSizeMake(debugLabel.frame.size.width, 99990) lineBreakMode:UILineBreakModeWordWrap];
+    debugLabel.frame = CGRectMake(debugLabel.frame.origin.x, debugLabel.frame.origin.y, debugLabel.frame.size.width, debugSize.height);
+    if(self.iPad){
+        [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width, debugSize.height + 20)];
+    }else{
+        [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width, debugLabel.frame.origin.y + debugSize.height + 20)];
     }
+    [debugLabel setText:debug];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mmRequestDebug:) name:@"MM_REQUEST_DEBUG" object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
+    if(self.iPad){
+        return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+    }else{
+        return UIInterfaceOrientationIsPortrait(interfaceOrientation);
     }
 }
 

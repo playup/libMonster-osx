@@ -16,6 +16,7 @@
 #define kMetricMonsterMessageKeySessionDuration     @"sessionDuration"
 #define kMetricMonsterMessageKeyTotalDuration       @"totalDuration"
 #define kMetricMonsterMessageKeyCurrentScene        @"scene"
+#define kMetricMonsterMessageKeyInAppPurchase       @"inAppPurchase"
 
 @interface MetricMonster : NSObject
 

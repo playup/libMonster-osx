@@ -49,6 +49,11 @@
     [theRequest setHTTPMethod:@"POST"];
 
     NSString *request = [NSString stringWithFormat:@"USE %@ ADD JSON ",catalog];
+    
+#ifdef MM_REQUEST_DEBUG
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MM_REQUEST_DEBUG" object:[events description]];
+#endif
+    
     NSMutableData *requestbody = [NSMutableData dataWithData:[request dataUsingEncoding:NSASCIIStringEncoding]];
     
     MonsterJSON *serializer = [[MonsterJSON alloc] init];
