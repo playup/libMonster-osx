@@ -100,7 +100,6 @@
 {
     
 #if !__has_feature(objc_arc)
-    [connection release];
     [_receivedData release];
     _receivedData = nil;
 #endif
